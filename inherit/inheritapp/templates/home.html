@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>blog detail</title>
+    <style>
+table, th, td {
+  border: 1px solid red ;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+}
+table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: gray;
+}
+</style>
+</head>
+<body>
+
+
+<!-- student area -->
+<h1> Student Table : - </h1><br>
+<div class="table-responsive">
+  <table class="table align-middle" style="background-color:#109952">
+    <thead>
+    <tr>
+        <th scope="col">ID </th>
+        <th scope="col">NAME</th>
+        <th scope="col">AGE</th>
+        <th scope="col">FEES</th>
+
+    </tr>
+  </thead>
+        <tbody>
+        {% for stu in s %}
+        <tr>
+            <td>{{stu.id}}</td>
+            <td>{{stu.name}}</td>
+             <td>{{stu.age}}</td>
+             <td>{{stu.fees}}</td>
+
+
+
+        </tr>
+        {% endfor %}
+        </tbody>
+  </table>
+</div><hr>
+
+<!-- teacher area -->
+<h1> Teacher Table : - </h1><br>
+<div class="table-responsive">
+  <table class="table align-middle" style="background-color:#154215">
+    <thead>
+    <tr>
+        <th scope="col">ID </th>
+        <th scope="col">NAME</th>
+        <th scope="col">AGE</th>
+        <th scope="col">DATE</th>
+        <th scope="col">SALARY</th>
+
+    </tr>
+  </thead>
+        <tbody>
+        {% for stu in t %}
+        <tr>
+            <td>{{stu.id}}</td>
+            <td>{{stu.name}}</td>
+             <td>{{stu.age}}</td>
+             <td>{{stu.date}}</td>
+             <td>{{stu.salary}}</td>
+
+
+
+        </tr>
+        {% endfor %}
+        </tbody>
+  </table>
+</div><hr>
+<!-- builder area -->
+<h1> Builder Table : - </h1><br>
+<div class="table-responsive">
+  <table class="table align-middle" style="background-color:#656565">
+    <thead>
+    <tr>
+        <th scope="col">ID </th>
+        <th scope="col">NAME</th>
+        <th scope="col">AGE</th>
+        <th scope="col">DATE</th>
+        <th scope="col">PAYMENT</th>
+
+    </tr>
+  </thead>
+        <tbody>
+        {% for stu in b %}
+        <tr>
+            <td>{{stu.id}}</td>
+            <td>{{stu.name}}</td>
+             <td>{{stu.age}}</td>
+             <td>{{stu.date}}</td>
+             <td>{{stu.payment}}</td>
+
+
+
+        </tr>
+        {% endfor %}
+        </tbody>
+  </table>
+</div><hr>
+<!-- exam area -->
+<h1> exam Table : - </h1><br>
+<div class="table-responsive">
+  <table class="table align-middle" style="background-color:#656565">
+    <thead>
+    <tr>
+        <th scope="col">ID </th>
+        <th scope="col">CNAME</th>
+        <th scope="col">CITY</th>
+
+    </tr>
+  </thead>
+        <tbody>
+        {% for stu in e %}
+        <tr>
+            <td>{{stu.id}}</td>
+            <td>{{stu.cname}}</td>
+             <td>{{stu.city}}</td>
+
+        </tr>
+        {% endfor %}
+        </tbody>
+  </table>
+</div><hr>
+
+
+
+<!-- student1 area -->
+<h1> student1 Table : - </h1><br>
+<div class="table-responsive">
+  <table class="table align-middle" style="background-color:#656565">
+    <thead>
+    <tr>
+        <th scope="col">ID </th>
+        <th scope="col">CNAME</th>
+        <th scope="col">CITY</th>
+        <th scope="col">NAME</th>
+        <th scope="col">ROLL</th>
+
+    </tr>
+  </thead>
+        <tbody>
+        {% for stu in s1 %}
+        <tr>
+            <td>{{stu.id}}</td>
+            <td>{{stu.cname}}</td>
+             <td>{{stu.city}}</td>
+             <td>{{stu.name}}</td>
+             <td>{{stu.roll}}</td>
+
+
+
+        </tr>
+        {% endfor %}
+        </tbody>
+  </table>
+</div><hr>
+
+<!-- examcenter area -->
+<h1> examcenter Table : - </h1><br>
+<div class="table-responsive">
+  <table class="table align-middle" style="background-color:#656565">
+    <thead>
+    <tr>
+        <th scope="col">ID </th>
+        <th scope="col">CNAME</th>
+        <th scope="col">CITY</th>
+
+    </tr>
+  </thead>
+        <tbody>
+        {% for stu in ec %}
+        <tr>
+            <td>{{stu.id}}</td>
+            <td>{{stu.cname}}</td>
+             <td>{{stu.city}}</td>
+
+        </tr>
+        {% endfor %}
+        </tbody>
+  </table>
+</div><hr>
+
+<!-- myexam area -->
+<h1> myexam Table (proxy): - </h1><br>
+<div class="table-responsive">
+  <table class="table align-middle" style="background-color:#656565">
+    <thead>
+    <tr>
+        <th scope="col">ID </th>
+        <th scope="col">CNAME</th>
+        <th scope="col">CITY</th>
+
+    </tr>
+  </thead>
+        <tbody>
+        {% for stu in me %}
+        <tr>
+            <td>{{stu.id}}</td>
+            <td>{{stu.cname}}</td>
+             <td>{{stu.city}}</td>
+
+        </tr>
+        {% endfor %}
+        </tbody>
+  </table>
+</div><hr>
+
+<!--Stu area-->
+<h1> Stu Table : - </h1><br>
+<div class="table-responsive">
+  <table class="table align-middle" style="background-color:#656565">
+    <thead>
+    <tr>
+        <th scope="col">ID </th>
+        <th scope="col">NAME</th>
+        <th scope="col">ROLL</th>
+
+    </tr>
+  </thead>
+        <tbody>
+        {% for st in stu %}
+        <tr>
+            <td>{{st.id}}</td>
+            <td>{{st.name}}</td>
+             <td>{{st.roll}}</td>
+
+        </tr>
+        {% endfor %}
+        </tbody>
+  </table>
+</div><hr>
+
+<!-- Stu1 area -->
+<h1> Stu1 Table : - </h1><br>
+<div class="table-responsive">
+  <table class="table align-middle" style="background-color:#656565">
+    <thead>
+    <tr>
+        <th scope="col">ID </th>
+        <th scope="col">NAME</th>
+        <th scope="col">ROLL</th>
+
+    </tr>
+  </thead>
+        <tbody>
+        {% for st in stu1 %}
+        <tr>
+            <td>{{st.id}}</td>
+            <td>{{st.name}}</td>
+             <td>{{st.roll}}</td>
+
+        </tr>
+        {% endfor %}
+        </tbody>
+  </table>
+</div><hr>
+
+
+
+
+</body>
+</html>
